@@ -61,8 +61,8 @@ func main() {
 		pid SERIAL PRIMARY KEY,
 		participant1 INT NOT NULL,
 		participant2 INT NOT NULL,
-		startTime TEXT,
-		endTime TEXT 
+		startTime TIME,
+		endTime TIME 
 		);`
 
 	_, err = db.Exec(sqlTable2)
